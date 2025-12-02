@@ -61,69 +61,180 @@
                 android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Gender -->
+        <!-- Who Would Join -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Gender"
+            android:text="Who would you like to join a group?"
             android:textSize="16sp"
             android:textColor="#2c3e50"
             android:layout_marginBottom="8dp" />
 
         <Spinner
-            android:id="@+id/genderSpinner"
+            android:id="@+id/whoWouldJoinSpinner"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:background="@drawable/spinner_background"
             android:layout_marginBottom="16dp" />
 
-        <!-- Preferred Day -->
+        <!-- Preferred Days (Multiple Selection) -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Preferred Day"
+            android:text="Preferred Days (Select all that apply)"
             android:textSize="16sp"
             android:textColor="#2c3e50"
             android:layout_marginBottom="8dp" />
 
-        <Spinner
-            android:id="@+id/daySpinner"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:background="@drawable/spinner_background"
-            android:layout_marginBottom="16dp" />
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
 
-        <!-- Preferred Time -->
+            <CheckBox
+                android:id="@+id/mondayCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Monday"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/tuesdayCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tuesday"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/wednesdayCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wednesday"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/thursdayCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thursday"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/fridayCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Friday"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/saturdayCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saturday"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/sundayCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sunday"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Preferred Times (Multiple Selection) -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Preferred Time"
+            android:text="Preferred Times (Select all that apply)"
             android:textSize="16sp"
             android:textColor="#2c3e50"
             android:layout_marginBottom="8dp" />
 
-        <Spinner
-            android:id="@+id/timeSpinner"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:background="@drawable/spinner_background"
-            android:layout_marginBottom="16dp" />
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
 
-        <!-- Group Type -->
+            <CheckBox
+                android:id="@+id/morningCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Morning"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/afternoonCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Afternoon"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/eveningCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Evening"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Preferred Group Types (Multiple Selection) -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Preferred Group Type"
+            android:text="Preferred Group Types (Select all that apply)"
             android:textSize="16sp"
             android:textColor="#2c3e50"
             android:layout_marginBottom="8dp" />
 
-        <Spinner
-            android:id="@+id/groupTypeSpinner"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:background="@drawable/spinner_background"
-            android:layout_marginBottom="32dp" />
+            android:padding="12dp"
+            android:layout_marginBottom="32dp">
+
+            <CheckBox
+                android:id="@+id/mensCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Men's"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/womensCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Women's"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/mixedCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mixed"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/youngAdultsCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Young Adults (18-25)"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/youngProfessionalsCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Young Professionals (25-35)"
+                android:textSize="16sp" />
+        </LinearLayout>
 
         <!-- Submit Button -->
         <Button
